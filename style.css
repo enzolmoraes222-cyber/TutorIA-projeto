@@ -1,0 +1,226 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+
+header{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+padding:20px 8%;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:50px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+min-height:80vh;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:3.5rem;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:1.2rem;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:white;
+color:#2563eb;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.hero-card{
+background:white;
+color:#1e293b;
+padding:30px;
+border-radius:20px;
+width:350px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:2.5rem;
+color:#2563eb;
+}
+
+.steps,
+.features,
+.plans{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step,
+.card,
+.plan{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.step:hover,
+.card:hover,
+.plan:hover{
+transform:translateY(-8px);
+}
+
+.number{
+width:60px;
+height:60px;
+background:#2563eb;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+font-size:22px;
+margin-bottom:15px;
+}
+
+.card h3,
+.step h3,
+.plan h3{
+margin-bottom:15px;
+}
+
+.price{
+font-size:2rem;
+font-weight:bold;
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.plan ul{
+list-style:none;
+margin-bottom:20px;
+}
+
+.plan li{
+margin:10px 0;
+}
+
+.plan button{
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.destaque{
+border:3px solid #2563eb;
+}
+
+.cta{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+text-align:center;
+padding:80px 30px;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.buttons{
+justify-content:center;
+}
+
+.hero-card{
+width:100%;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+}

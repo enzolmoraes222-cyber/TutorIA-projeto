@@ -1,230 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TutorIA - Estudo Inteligente</title>
+<title>Tutor ENEM</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
 
-<nav>
-<div class="logo">🧠 TutorIA</div>
+<h1>🎓 Tutor ENEM</h1>
 
-<div class="menu">
-<a href="#inicio">Início</a>
-<a href="#continuar">Continuar</a>
-<a href="#recursos">Estudar</a>
-<a href="explicacoes.html">Explicações</a>
-</div>
-</nav>
-
-<div class="hero" id="inicio">
-
-<div class="hero-text">
-
-<h1>O que você vai estudar hoje?</h1>
-
-<p>Escolha um caminho e comece a aprender de forma guiada.</p>
-
-<div class="buttons">
-<a href="explicacoes.html" class="btn btn-primary">📚 Aprender conteúdo</a>
-<a href="simulados.html" class="btn btn-secondary">📝 Fazer exercícios</a>
-</div>
-
-</div>
-
-<div class="hero-card">
-<h3>📌 Seu progresso</h3>
-<p>Continue de onde parou:</p>
-<p>• Fotossíntese</p>
-<p>• Função do 2º grau</p>
-<p>• Interpretação de texto</p>
-</div>
-
-</div>
+<p>Seu guia inteligente de estudos</p>
 
 </header>
 
-<section id="continuar">
 
-<div class="section-title">
-<h2>🔁 Revisão rápida</h2>
-</div>
 
-<div class="features">
-
-<a href="revisao.html" class="card">
-<h3>Erros recentes</h3>
-<p>Revise conteúdos que você errou.</p>
-</a>
-
-<a href="flashcards.html" class="card">
-<h3>Flashcards</h3>
-<p>Memorização rápida de conceitos.</p>
-</a>
-
-<a href="tutor.html" class="card">
-<h3>Tutor IA</h3>
-<p>Tire dúvidas em tempo real.</p>
-</a>
-
-</div>
-
-</section>
-
-<section id="recursos">
-
-<div class="section-title">
-<h2>📚 Trilhas de estudo</h2>
-</div>
-
-<div class="features">
-
-<a href="explicacoes.html" class="card">
-<h3>Explicações</h3>
-<p>Aprenda o conteúdo do zero ao avançado.</p>
-</a>
-
-<a href="simulados.html" class="card">
-<h3>Exercícios</h3>
-<p>Treine com questões estilo ENEM.</p>
-</a>
-
-<a href="revisao.html" class="card">
-<h3>Revisão inteligente</h3>
-<p>Reforce o que você errou.</p>
-</a>
-
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 TutorIA - Aprendizado contínuo</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Explicações ENEM - TutorIA</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
 <nav>
-<div class="logo">🧠 TutorIA</div>
-<a href="index.html" style="color:white;text-decoration:none;">🏠 Home</a>
+
+<button onclick="mostrar('inicio')">Início</button>
+<button onclick="mostrar('metodos')">Métodos</button>
+<button onclick="mostrar('questoes')">Questões</button>
+<button onclick="mostrar('conteudos')">Conteúdos</button>
+
 </nav>
-</header>
 
-<section>
 
-<div class="section-title">
-<h2>📚 Explicação Interativa ENEM</h2>
-</div>
 
-<div class="lesson-box">
 
-<h3>Fotossíntese</h3>
+<section id="inicio" class="pagina">
 
-<div class="levels">
 
-<div class="level">
-<h4>🟢 Básico</h4>
-<p>Processo em que plantas produzem energia usando luz solar.</p>
-</div>
+<h2>Bem-vindo ao Tutor ENEM</h2>
 
-<div class="level">
-<h4>🟡 ENEM</h4>
-<p>Plantas usam luz, água e CO₂ para produzir glicose e oxigênio.</p>
-</div>
 
-<div class="level">
-<h4>🔴 Avançado</h4>
-<p>A taxa de fotossíntese depende da luz, CO₂ e temperatura.</p>
-</div>
-
-</div>
-
-<div class="example">
-<h4>💡 Exemplo ENEM</h4>
-<p>Plantas em ambientes escuros crescem menos porque recebem menos luz para produzir energia.</p>
-</div>
-
-<div class="mistakes">
-<h4>⚠️ Erros comuns</h4>
-<ul>
-<li>Confundir fotossíntese com respiração celular</li>
-<li>Achar que ocorre apenas à noite</li>
-<li>Ignorar o papel do CO₂</li>
-</ul>
-</div>
-
-<div class="question-box">
-
-<h4>📝 Agora pratique</h4>
-
-<p>O que é necessário para a fotossíntese?</p>
-
-<button onclick="answer('A')" class="opt">A) Luz, água e CO₂</button>
-<button onclick="answer('B')" class="opt">B) Apenas luz</button>
-<button onclick="answer('C')" class="opt">C) Apenas água</button>
-
-<p id="result"></p>
-
-</div>
-
-<div class="summary">
-<h4>📌 Resumo ENEM</h4>
 <p>
-• Usa luz solar<br>
-• Produz glicose<br>
-• Ocorre nas folhas
+Organize seus estudos, pratique questões e revise conteúdos importantes.
 </p>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>📚 Questões</h3>
+
+<p>
+Treine com questões estilo ENEM.
+</p>
+
 </div>
 
-<button onclick="review()" class="btn-mini">🔁 Mini revisão</button>
 
-<p id="review"></p>
+
+<div class="card">
+
+<h3>⏳ Pomodoro</h3>
+
+<p>
+Estude usando ciclos de concentração.
+</p>
 
 </div>
+
+
+
+<div class="card">
+
+<h3>📈 Evolução</h3>
+
+<p id="progresso">
+Acertos: 0
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<script>
-function answer(option){
-const result = document.getElementById("result");
 
-if(option === "A"){
-result.innerHTML = "✔ Correto!";
-result.style.color = "#22c55e";
-}else{
-result.innerHTML = "❌ Errado. Resposta correta: A";
-result.style.color = "#ef4444";
-}
-}
 
-function review(){
-document.getElementById("review").innerHTML =
-"🔁 Revisão: Fotossíntese usa luz, água e CO₂ para produzir energia nas plantas.";
-}
-</script>
+
+
+
+
+<section id="metodos" class="pagina escondido">
+
+
+<h2>Métodos de Estudo</h2>
+
+
+<div class="conteudo">
+
+
+<h3>⏰ Método Pomodoro</h3>
+
+<p>
+Estude 25 minutos focado e faça uma pausa de 5 minutos.
+</p>
+
+
+
+<h3>🔄 Revisão Espaçada</h3>
+
+<p>
+Revise conteúdos em intervalos para melhorar a memória.
+</p>
+
+
+
+<h3>🧠 Active Recall</h3>
+
+<p>
+Tente lembrar o conteúdo sem consultar o material.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="questoes" class="pagina escondido">
+
+
+<h2>📝 Questões ENEM</h2>
+
+
+<div id="questaoBox">
+
+
+<h3 id="pergunta"></h3>
+
+
+<div id="alternativas"></div>
+
+
+<p id="resultado"></p>
+
+
+<p id="explicacao"></p>
+
+
+<button id="proxima" onclick="proximaQuestao()">
+
+Próxima questão
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="conteudos" class="pagina escondido">
+
+
+<h2>📚 Conteúdos importantes</h2>
+
+
+<div class="conteudo">
+
+
+<h3>📖 Linguagens</h3>
+
+<ul>
+
+<li>Interpretação de texto</li>
+<li>Literatura</li>
+<li>Gramática</li>
+
+</ul>
+
+
+
+<h3>➗ Matemática</h3>
+
+<ul>
+
+<li>Porcentagem</li>
+<li>Funções</li>
+<li>Estatística</li>
+
+</ul>
+
+
+
+<h3>🌎 Humanas</h3>
+
+<ul>
+
+<li>História</li>
+<li>Geografia</li>
+<li>Sociologia</li>
+
+</ul>
+
+
+
+<h3>🔬 Natureza</h3>
+
+<ul>
+
+<li>Biologia</li>
+<li>Química</li>
+<li>Física</li>
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
 
 </body>
+
 </html>

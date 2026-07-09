@@ -1,167 +1,243 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+*{
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-body {
-background: #0f172a;
-color: #f8fafc;
+
+body{
+
+margin:0;
+background:#f4f7fb;
+color:#333;
+
 }
 
-header {
-background: linear-gradient(135deg, #2563eb, #7c3aed);
-padding: 20px 8%;
+
+
+header{
+
+background:#2563eb;
+color:white;
+padding:30px;
+text-align:center;
+
 }
 
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 40px;
+
+
+header h1{
+
+margin:0;
+font-size:32px;
+
 }
 
-.logo {
-font-size: 28px;
-font-weight: 700;
+
+
+nav{
+
+display:flex;
+justify-content:center;
+gap:10px;
+padding:15px;
+background:white;
+box-shadow:0 2px 8px #ddd;
+
 }
 
-.menu a {
-color: white;
-margin-left: 15px;
-text-decoration: none;
+
+
+button{
+
+padding:12px 18px;
+border:none;
+border-radius:8px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+
 }
 
-.hero {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 40px;
-min-height: 70vh;
+
+
+button:hover{
+
+background:#1d4ed8;
+transform:scale(1.03);
+
 }
 
-.hero-text h1 {
-font-size: 2.8rem;
-}
 
-.hero-text p {
-opacity: 0.9;
-margin: 15px 0;
-}
 
-.btn {
-padding: 12px 18px;
-border-radius: 10px;
-text-decoration: none;
-font-weight: bold;
-}
+.pagina{
 
-.btn-primary {
-background: white;
-color: #2563eb;
-}
-
-.btn-secondary {
-border: 2px solid white;
-color: white;
-}
-
-section {
-padding: 70px 8%;
-}
-
-.section-title {
-text-align: center;
-margin-bottom: 40px;
-color: #60a5fa;
-}
-
-.features {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 20px;
-}
-
-.card {
-background: #1e293b;
-padding: 20px;
-border-radius: 15px;
-transition: 0.3s;
-text-decoration: none;
-color: white;
-}
-
-.card:hover {
-transform: translateY(-8px);
-box-shadow: 0 10px 25px rgba(37,99,235,0.25);
-}
-
-.lesson-box{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
+padding:30px;
 max-width:900px;
 margin:auto;
+
 }
 
-.levels{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-bottom:20px;
+
+
+.escondido{
+
+display:none;
+
 }
 
-.level{
-background:#0f172a;
-padding:15px;
-border-radius:10px;
+
+
+/* CARTÕES */
+
+.cards{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
 }
 
-.example,
-.mistakes,
-.summary,
-.question-box{
-margin-top:15px;
-padding:15px;
-border-radius:10px;
-background:#0f172a;
-}
 
-.opt{
-display:block;
-margin-top:10px;
-padding:10px;
-background:#334155;
-border:none;
-color:white;
-border-radius:8px;
-cursor:pointer;
-}
 
-.opt:hover{
-background:#2563eb;
-}
+.card{
 
-.btn-mini{
-margin-top:15px;
-padding:10px 15px;
-border:none;
-border-radius:8px;
-background:#2563eb;
-color:white;
-cursor:pointer;
-}
-
-footer{
-text-align:center;
+background:white;
 padding:20px;
-background:#020617;
+border-radius:15px;
+flex:1;
+box-shadow:0 3px 10px #ddd;
+
 }
 
-@media(max-width:768px){
-.hero{
-flex-direction:column;
-text-align:center;
+
+
+/* CONTEÚDOS */
+
+.conteudo{
+
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px #ddd;
+
 }
+
+
+
+/* QUESTÕES */
+
+#questaoBox{
+
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px #ddd;
+
+}
+
+
+
+#pergunta{
+
+font-size:22px;
+line-height:1.4;
+
+}
+
+
+
+#alternativas button{
+
+display:block;
+width:100%;
+margin:12px 0;
+text-align:left;
+
+}
+
+
+
+#alternativas button:disabled{
+
+opacity:0.75;
+cursor:not-allowed;
+
+}
+
+
+
+#resultado{
+
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
+
+}
+
+
+
+#explicacao{
+
+margin-top:15px;
+padding:15px;
+background:#f1f5f9;
+border-radius:10px;
+
+}
+
+
+
+#proxima{
+
+display:none;
+background:#16a34a;
+margin-top:20px;
+
+}
+
+
+
+#proxima:hover{
+
+background:#15803d;
+
+}
+
+
+
+/* RESPONSIVO PARA CELULAR */
+
+@media(max-width:600px){
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+
+.cards{
+
+flex-direction:column;
+
+}
+
+
+.pagina{
+
+padding:15px;
+
+}
+
+
+#pergunta{
+
+font-size:18px;
+
+}
+
+
 }
